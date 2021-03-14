@@ -58,11 +58,11 @@ func Solution(slice string) string {
 
 		switch sum(weighted[limit(i):limit(i+3)]) {
 		case 2:
-			// if sum of left triplet is -2 then new item is 1
+			// if sum of right triplet is -2 then new item is 1
 			weighted[i] = -1
 			continue
 		case -2:
-			// if sum of left triplet is 2 then new item is -1
+			// if sum of right triplet is 2 then new item is -1
 			weighted[i] = 1
 			continue
 		}
